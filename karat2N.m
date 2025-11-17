@@ -34,7 +34,7 @@ B1 = B.shiftRight(half);
 
 % recursive parts
 C0 = karat2N(A0, B0, half, base_bits);
-C2 = karat2N(A1, B1, half, base_bits);
+C2 = karat2N(A1, B1, N-half, base_bits);
 sumA = A0.add(A1);
 sumB = B0.add(B1);
 Csum = karat2N(sumA, sumB, half+1, base_bits); % note half+1 to handle carry
